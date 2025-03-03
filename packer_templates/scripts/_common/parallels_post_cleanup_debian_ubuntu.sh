@@ -8,7 +8,7 @@ parallels-iso|parallels-pvm)
     echo "Installing linux-kernel-headers for the current kernel version, to allow re-compilation of Parallels Tools upon boot"
 
     if [ -f "/usr/bin/apt-get" ]; then
-        apt-get install -y linux-headers-"$(uname -r)"
+        apt-get install -y linux-headers-generic
     fi
     ;;
 esac
